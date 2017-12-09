@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link href="css/article.css" rel="stylesheet"/>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="js/jquery.dialog.js"></script>
+
+</head>
+
+<body>
+<div class="header">
+    <h1><span>Y U H A N</span> <span>W A N G</span></h1>
+    <p>
+        <a href="index.html">HOME</a>
+        <a href="gallery.html">GALLERY</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+    </p>
+</div>
+<div class="contact">
+    <p>If you have any question or interted in coportion,contact me soon!I will get back to you as soon as I can.Please allow a couple days for me to respond.</p>
+    <input type="text" placeholder=" Name:">
+    <input type="text" placeholder=" Email:">
+    <input type="text" placeholder=" Subject:">
+    <textarea name="" id="" cols="30" rows="10" placeholder=" Contact:"></textarea>
+    <button id="btn1" class="button">SEND</button>
+    <div class="dialog dialog1"><h2>Thanks</h2><p>Your email has been successfully sent <br />and I appreciate you contacting me.<br />I'll be in touch soon.</p></div>
+
+    <script type="text/javascript">
+        $(".dialog1").dialog({
+
+        },function(api){
+            $('#btn1').click(function(){
+                api.open();
+            });
+        });
+    </script>
+</div>
+
+</body>
+</html>
